@@ -29,3 +29,4 @@ C:\Users\He\Documents\GitHub\Mandelbrot-with-UI\Mandelbrot Opdracht\obj\Debug\ne
 C:\Users\He\Documents\GitHub\Mandelbrot-with-UI\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.pdb
 C:\Users\He\Documents\GitHub\Mandelbrot-with-UI\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.genruntimeconfig.cache
 C:\Users\He\Documents\GitHub\Mandelbrot-with-UI\Mandelbrot Opdracht\obj\Debug\net8.0-windows\ref\Mandelbrot Opdracht.dll
+C:\Users\He\Documents\GitHub\Mandelbrot-with-UI\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot_Opdracht.Properties.Resources.resources

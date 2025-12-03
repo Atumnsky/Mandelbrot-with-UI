@@ -19,24 +19,26 @@ class SmoothForm : Form
     {
         static void Main()
         {
-            // Voor de DPI probleem van mijn scherm
-            Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+            // Voor de DPI probleem
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             int screenWidth = 2000;
             int screenHeight = 1500;
 
-            Size window = new Size(screenWidth, screenHeight);
-            SmoothForm screen = new SmoothForm(window);
-
-            // Bitmap for the Mandelbrot
             int bitmapWidth = 1500;
             int bitmapHeight = 1500;
 
+            Size window = new Size(screenWidth, screenHeight);
+            SmoothForm screen = new SmoothForm(window);
+
+
+            // Bitmap for the Mandelbrot
+
             Bitmap bitmap = new Bitmap(bitmapWidth, bitmapHeight);
 
-            // Voor de DPI probleem van mijn scherm
+            // Voor de DPI probleem
             using (Graphics g = Graphics.FromHwnd(IntPtr.Zero))
             {
                 bitmap.SetResolution(g.DpiX, g.DpiY);
@@ -71,6 +73,8 @@ class SmoothForm : Form
             it.Size = textSize;
             it.Location = new Point(textX, itY);
             it.TextAlign = ContentAlignment.MiddleCenter;
+            
+
 
             NumericUpDown itControl = new NumericUpDown();
             screen.Controls.Add(itControl);
@@ -80,7 +84,7 @@ class SmoothForm : Form
             itControl.Location = new Point(buttonX, itY);
             itControl.Size = buttonSize;
             itControl.Value = 100;
-            itControl.Maximum = 100000;
+            itControl.Maximum = 5000;
             itControl.Minimum = 1;
 
 
@@ -103,7 +107,7 @@ class SmoothForm : Form
             xControl.ForeColor = Color.Black;
             xControl.Location = new Point(buttonX, XY);
             xControl.Size = buttonSize;
-            xControl.DecimalPlaces = 10;
+            xControl.DecimalPlaces = 12;
             xControl.Minimum = -10000;
             xControl.Maximum = 10000;
             xControl.Value = 0;
@@ -129,7 +133,7 @@ class SmoothForm : Form
             yControl.ForeColor = Color.Black;
             yControl.Location = new Point(buttonX, YY);
             yControl.Size = buttonSize;
-            yControl.DecimalPlaces = 10;
+            yControl.DecimalPlaces = 12;
             yControl.Minimum = -10000;
             yControl.Maximum = 10000;
             yControl.Value = 0;
@@ -178,7 +182,7 @@ class SmoothForm : Form
             mouseMag.ForeColor = Color.Black;
             mouseMag.Location = new Point(buttonX + 150, text1Y);
             mouseMag.Size = new Size(100, 25);
-            mouseMag.Minimum = 1;
+            mouseMag.Minimum = 0;
             mouseMag.Maximum = 1000;
             mouseMag.Value = 5;
 
@@ -195,7 +199,7 @@ class SmoothForm : Form
             kleurBeschrijving.TextAlign = ContentAlignment.MiddleCenter;
 
 
-            int CY = kleurBY + 80;
+            int CY = kleurBY + 50;
             // Color control
             Label colorGradient = new Label();
             screen.Controls.Add(colorGradient);
@@ -206,6 +210,12 @@ class SmoothForm : Form
             colorGradient.Size = textSize;
             colorGradient.Location = new Point(textX, CY);
             colorGradient.TextAlign = ContentAlignment.MiddleCenter;
+            
+
+            // Make the gradient value random at every start
+            Random red = new Random();
+            Random green = new Random();
+            Random blue = new Random();
 
             NumericUpDown gradientR = new NumericUpDown();
             screen.Controls.Add(gradientR);
@@ -215,9 +225,9 @@ class SmoothForm : Form
             gradientR.Location = new Point(buttonX, CY);
             gradientR.Size = new Size(100, 25);
             gradientR.DecimalPlaces = 1;
-            gradientR.Minimum = 1;
+            gradientR.Minimum = 0;
             gradientR.Maximum = 255;
-            gradientR.Value = 22;
+            gradientR.Value = red.Next(0,255);
             gradientR.Increment = 0.1M;
 
             NumericUpDown gradientG = new NumericUpDown();
@@ -228,9 +238,9 @@ class SmoothForm : Form
             gradientG.Location = new Point(buttonX + 105, CY);
             gradientG.Size = new Size(100, 25);
             gradientG.DecimalPlaces = 1;
-            gradientG.Minimum = 1;
+            gradientG.Minimum = 0;
             gradientG.Maximum = 255;
-            gradientG.Value = 33;
+            gradientG.Value = green.Next(0,255);
             gradientG.Increment = 0.1M;
 
             NumericUpDown gradientB = new NumericUpDown();
@@ -241,10 +251,28 @@ class SmoothForm : Form
             gradientB.Location = new Point(buttonX + 2 * 105, CY);
             gradientB.Size = new Size(100, 25);
             gradientB.DecimalPlaces = 1;
-            gradientB.Minimum = 1;
+            gradientB.Minimum = 0;
             gradientB.Maximum = 255;
-            gradientB.Value = 44;
+            gradientB.Value = blue.Next(0,255);
             gradientB.Increment = 0.1M;
+
+
+            // Random Gradient button
+            Button random = new Button();
+            screen.Controls.Add(random);
+            random.Text = "Random Gradients";
+            random.Font = Arial;
+            random.Location = new Point(10, screenHeight - 300);
+            random.Size = new Size(480, 50);
+
+            void randomG(object sender, EventArgs e)
+            {
+                gradientR.Value = red.Next(0,255);
+                gradientG.Value = green.Next(0, 255);
+                gradientB.Value = blue.Next(0, 255);
+                renderPicture(null, new EventArgs());
+            }
+
 
             // RGB (ABC) voor mandel getallen die naar oneindigd gaat (Islands)
             Label islandColor = new Label();
@@ -254,7 +282,7 @@ class SmoothForm : Form
             islandColor.ForeColor = Color.White;
             islandColor.BackColor = backgroundGray;
             islandColor.Size = textSize;
-            islandColor.Location = new Point(textX, CY + 80);
+            islandColor.Location = new Point(textX, CY + 70);
             islandColor.TextAlign = ContentAlignment.MiddleCenter;
 
             NumericUpDown colorA = new NumericUpDown();
@@ -262,7 +290,7 @@ class SmoothForm : Form
             colorA.Font = Numbers;
             colorA.Anchor = AnchorStyles.Left;
             colorA.ForeColor = Color.Black;
-            colorA.Location = new Point(buttonX, CY + 80);
+            colorA.Location = new Point(buttonX, CY + 70);
             colorA.Size = new Size(100, 25);
             colorA.DecimalPlaces = 1;
             colorA.Minimum = 0;
@@ -275,7 +303,7 @@ class SmoothForm : Form
             colorB.Font = Numbers;
             colorB.Anchor = AnchorStyles.Left;
             colorB.ForeColor = Color.Black;
-            colorB.Location = new Point(buttonX + 105, CY + 80);
+            colorB.Location = new Point(buttonX + 105, CY + 70);
             colorB.Size = new Size(100, 25);
             colorB.DecimalPlaces = 1;
             colorB.Minimum = 0;
@@ -288,7 +316,7 @@ class SmoothForm : Form
             colorC.Font = Numbers;
             colorC.Anchor = AnchorStyles.Left;
             colorC.ForeColor = Color.Black;
-            colorC.Location = new Point(buttonX + 2 * 105, CY + 80);
+            colorC.Location = new Point(buttonX + 2 * 105, CY + 70);
             colorC.Size = new Size(100, 25);
             colorC.DecimalPlaces = 1;
             colorC.Minimum = 0;
@@ -298,24 +326,189 @@ class SmoothForm : Form
 
 
 
-            int LZY = CY + 190;
+            int VWY = CY + 160;
             // Selection for interesting views
+            Label preview = new Label();
+            screen.Controls.Add(preview);
+            preview.Text = "Interesting views";
+            preview.Font = Arial;
+            preview.ForeColor = Color.White;
+            preview.BackColor = backgroundGray;
+            preview.Size = new Size(500, 30);
+            preview.Location = new Point(textX, VWY);
+            preview.TextAlign = ContentAlignment.MiddleCenter;
+
+            Point leftAlign = new Point(30, VWY + 50);
+            Point rightAlign = new Point(265, VWY + 50);
+            Size previewSize = new Size(200, 200);
+
+            // view 1
+            Button view1 = new Button();
+            screen.Controls.Add(view1);
+            view1.Size = previewSize;
+            view1.Location = leftAlign;
+            view1.FlatStyle = FlatStyle.Flat;
+            view1.FlatAppearance.BorderSize = 0;
+            Image png1 = Mandelbrot_Opdracht.Properties.Resources.view1;
+            view1.Image = png1;
+
+            // view 2
+            Button view2 = new Button();
+            screen.Controls.Add(view2);
+            view2.Size = previewSize;
+            view2.Location = rightAlign;
+            view2.FlatStyle = FlatStyle.Flat;
+            view2.FlatAppearance.BorderSize = 0;
+            Image png2 = Mandelbrot_Opdracht.Properties.Resources.view2;
+            view2.Image = png2;
+
+            // view 3
+            Button view3 = new Button();
+            screen.Controls.Add(view3);
+            view3.Size = previewSize;
+            view3.Location = new Point(leftAlign.X,leftAlign.Y+235);
+            view3.FlatStyle = FlatStyle.Flat;
+            view3.FlatAppearance.BorderSize = 0;
+            Image png3 = Mandelbrot_Opdracht.Properties.Resources.view3;
+            view3.Image = png3;
+
+            // view 4
+            Button view4 = new Button();
+            screen.Controls.Add(view4);
+            view4.Size = previewSize;
+            view4.Location = new Point(rightAlign.X,rightAlign.Y+235);
+            view4.FlatStyle = FlatStyle.Flat;
+            view4.FlatAppearance.BorderSize = 0;
+            Image png4 = Mandelbrot_Opdracht.Properties.Resources.view4;
+            view4.Image = png4;
+
+
+            // Render view1
+            void renderView1(object sender, EventArgs e)
+            {
+                itControl.Value = 1000;
+
+                xControl.Value = (decimal)-1.786032334315;
+                yControl.Value = (decimal)0.000311613950;
+
+                zoomControl.Value = 242;
+
+                mouseMag.Value = 5;
+
+                gradientR.Value = 22;
+                gradientG.Value = 33;
+                gradientB.Value = 44;
+
+                colorA.Value = 0;
+                colorB.Value = 0;
+                colorC.Value = 0;
+
+                renderPicture(null, new EventArgs());
+            }
+
+            // Render view2
+            void renderView2(object sender, EventArgs e)
+            {
+                itControl.Value = 1000;
+
+                xControl.Value = (decimal)-1.5028133092;
+                yControl.Value = (decimal)-0.0077501074;
+
+                zoomControl.Value = 114;
+
+                mouseMag.Value = 5;
+
+                gradientR.Value = (decimal)29.2;
+                gradientG.Value = (decimal)27.3;
+                gradientB.Value = (decimal)49.1;
+
+                colorA.Value = 0;
+                colorB.Value = 0;
+                colorC.Value = 0;
+
+                renderPicture(null, new EventArgs());
+            }
+
+            // Render view3
+            void renderView3(object sender, EventArgs e)
+            {
+                itControl.Value = 500;
+
+                xControl.Value = (decimal)-1.383543796479;
+                yControl.Value = (decimal)-0.018932348872;
+
+                zoomControl.Value = 185;
+
+                mouseMag.Value = 5;
+
+                gradientR.Value = (decimal)3.0;
+                gradientG.Value = (decimal)21.3;
+                gradientB.Value = (decimal)65.1;
+
+                colorA.Value = 0;
+                colorB.Value = 0;
+                colorC.Value = 0;
+
+                renderPicture(null, new EventArgs());
+            }
+
+            // Render view4
+            void renderView4(object sender, EventArgs e)
+            {
+                itControl.Value = 1000;
+
+                xControl.Value = (decimal)0.001643721972;
+                yControl.Value = (decimal)0.822467633299;
+
+                zoomControl.Value = 260;
+
+                mouseMag.Value = 5;
+
+                gradientR.Value = (decimal)3.3;
+                gradientG.Value = (decimal)15.7;
+                gradientB.Value = (decimal)108.7;
+
+                colorA.Value = 0;
+                colorB.Value = 0;
+                colorC.Value = 0;
+
+                renderPicture(null, new EventArgs());
+            }
 
 
 
             // Render button
+            int renderY = screenHeight - 150;
             Button render = new Button();
             screen.Controls.Add(render);
             render.Text = "Render";
             render.Font = new Font("Arial Black", 15, FontStyle.Regular);
             render.Size = new Size(480, 120);
-            render.Location = new Point(10, screenHeight - 150);
+            render.Location = new Point(10, renderY);
+
+            // Refresh Button
+            Button refresh = new Button();
+            screen.Controls.Add(refresh);
+            refresh.Text = "Reset";
+            refresh.Font = Arial;
+            refresh.Size = new Size(230, 60);
+            refresh.Location = new Point(260, renderY - 80);
+
+
+            // Show Center button
+            Button showC = new Button();
+            screen.Controls.Add(showC);
+            showC.Text = "Show Center";
+            showC.Font = Arial;
+            showC.Size = new Size(230, 60);
+            showC.Location = new Point(10, renderY - 80);
+
 
 
             // UI Background
             Bitmap background = new Bitmap(screenWidth, screenHeight);
 
-            // Voor de DPI probleem van mijn scherm
+            // Voor de DPI probleem
             using (Graphics g = Graphics.FromHwnd(IntPtr.Zero))
             {
                 background.SetResolution(g.DpiX, g.DpiY);
@@ -326,7 +519,35 @@ class SmoothForm : Form
             achtergrond.BackColor = backgroundGray;
             achtergrond.Size = new Size(screenWidth, screenHeight);
 
+            bool center = false;
             renderPicture(null, new EventArgs());
+
+
+            // reset functie
+            void Reset(object sender, EventArgs ea)
+            {
+                itControl.Value = 100;
+
+                xControl.Value = 0;
+                yControl.Value = 0;
+
+                zoomControl.Value = 0;
+
+                mouseMag.Value = 5;
+
+                gradientR.Value = 8;
+                gradientG.Value = 8;
+                gradientB.Value = 8;
+
+                colorA.Value = 0;
+                colorB.Value = 0;
+                colorC.Value = 0;
+
+                center = false;
+                showC.BackColor = Color.LightGray;
+
+                renderPicture(null, new EventArgs());
+            }
 
 
             // mouse zoom functie
@@ -340,38 +561,69 @@ class SmoothForm : Form
 
                 else if (mea.Button == MouseButtons.Right)
                 {
-                    if (zoomControl.Value > 0)
+                    if (zoomControl.Value > 0 && zoomControl.Value-mouseMag.Value>= 0)
                         zoomControl.Value -= magnification;
+
+                    else if (zoomControl.Value-mouseMag.Value <0)
+                    {
+                        zoomControl.Value = 0;
+                    }
                 }
 
-                // zoom en view
-                double zoomValue = (double)zoomControl.Value;
-                double zoomFactor = Math.Pow(1.1, zoomValue);
+                if (mouseMag.Value < 6)
+                {
+                    // zoom en view
+                    double zoomValue = (double)zoomControl.Value;
+                    // 1.1^ exponentiele zoom werd veel gebruikt voor smooth exponential zooming
+                    double zoomFactor = Math.Pow(1.1, zoomValue);
 
-                double rangeMax = 2;
-                double rangeMin = -2;
-                double rangeWidth = rangeMax - rangeMin;
+                    double rangeMax = 2;
+                    double rangeMin = -2;
+                    double rangeWidth = rangeMax - rangeMin;
 
-                // Als zoomFactor groter wordt, wordt de viewWidth kleiner (inzoomen)
-                double viewWidth = rangeWidth / zoomFactor;
-                // uit (bitmapHeight/bitmapWidth) krijgt je de ratio tussen Width en Height
-                double viewHeight = viewWidth * (bitmapHeight / bitmapWidth);
+                    // Als zoomFactor groter wordt, wordt de viewWidth kleiner (inzoomen)
+                    double viewWidth = rangeWidth / zoomFactor;
+                    // uit (bitmapHeight/bitmapWidth) krijgt je de ratio tussen Width en Height
+                    double viewHeight = viewWidth * (bitmapHeight / bitmapWidth);
 
-                // pixelDx|Dy is hoeveel ruimte een pixel vertegenwoordigd in de complex as van de Mandelbrot
-                double pixelDx = viewWidth / bitmapWidth;
-                double pixelDy = viewHeight / bitmapHeight;
+                    // pixelDx|Dy is hoeveel ruimte een pixel vertegenwoordigd in de complex as van de Mandelbrot
+                    double pixelDx = viewWidth / bitmapWidth;
+                    double pixelDy = viewHeight / bitmapHeight;
 
-                // (mea.X - bitmapWidth/2) Als deze waarde pos. is dan gaat het naar rechts, negatief naar links
-                // *pixelDx om de waarde te omzetten naar de complex as. + de huidige x verplaatsing
-                // zelfde voor Y
-                double newCenterX = ((mea.X - bitmapWidth / 2) * pixelDx) + (double)xControl.Value;
-                double newCenterY = ((mea.Y - bitmapHeight / 2) * pixelDy) + (double)yControl.Value;
+                    // (mea.X - bitmapWidth/2) Als deze waarde pos. is dan gaat het naar rechts, negatief naar links
+                    // *pixelDx om de waarde te omzetten naar de complex as. + de huidige x verplaatsing
+                    // zelfde voor Y
+                    double newCenterX = ((mea.X - bitmapWidth / 2) * pixelDx) + (double)xControl.Value;
+                    double newCenterY = ((mea.Y - bitmapHeight / 2) * pixelDy) + (double)yControl.Value;
 
-                // de locatie omzetten naar nieuwe locatie. Decimal omdat NumericUpDown decimal gebruikt
-                xControl.Value = (decimal)newCenterX;
-                yControl.Value = (decimal)newCenterY;
+                    // de locatie omzetten naar nieuwe locatie. Decimal omdat NumericUpDown decimal gebruikt
+                    xControl.Value = (decimal)newCenterX;
+                    yControl.Value = (decimal)newCenterY;
 
-                render.PerformClick();
+                    render.PerformClick();
+                }
+                else
+                {
+                    renderPicture(null, new EventArgs());
+
+                }
+            }
+
+            // Show center functie
+            void centerOn(object sender, EventArgs ea)
+            {
+                center = !center;
+                using (Graphics gr = Graphics.FromImage(bitmap))
+
+                    if (center)
+                    {
+                        showC.BackColor = Color.LimeGreen;
+                    }
+                    else
+                    {
+                        showC.BackColor = Color.LightGray;
+                    }
+                renderPicture(null, new EventArgs());
 
             }
 
@@ -443,19 +695,47 @@ class SmoothForm : Form
                         {
                             bitmap.SetPixel(pixelX, pixelY, Color.FromArgb((int)colorA.Value, (int)colorB.Value, (int)colorC.Value));
                         }
+
+                        
                     }
                 }
+                using(Graphics gr = Graphics.FromImage(bitmap))
+                if (mouseMag.Value > 5)
+                {
+                    gr.DrawString("The zoom will be at the center for magnification > 5", Arial, Brushes.Red, new Point(10, bitmapHeight - 50));
+                    gr.DrawRectangle(new Pen(Color.Red,3), (bitmapWidth / 2)-5, (bitmapHeight / 2)-5, 10, 10);
+                }
+
+
+                if (center)
+                {
+
+                    using (Graphics gr = Graphics.FromImage(bitmap))
+                    gr.DrawRectangle(new Pen(Color.Red,3), (bitmapWidth / 2) - 5, (bitmapHeight / 2) - 5, 10, 10);
+
+                }
+
                 figuur.Image = bitmap;
                 figuur.Refresh();
 
 
             }
 
+            achtergrond.Image = background;
 
             figuur.MouseClick += mouseZoom;
-            achtergrond.Image = background;
+
+            random.Click += randomG;
             render.Click += renderPicture;
-            render.PerformClick();
+            showC.Click += centerOn;
+            refresh.Click += Reset;
+
+            view1.Click += renderView1;
+            view2.Click += renderView2;
+            view3.Click += renderView3;
+            view4.Click += renderView4;
+
+
             Application.Run(screen);
 
 
