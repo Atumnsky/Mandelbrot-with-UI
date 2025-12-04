@@ -383,6 +383,32 @@ class SmoothForm : Form
             view4.Image = png4;
 
 
+            // Render button
+            int renderY = screenHeight - 150;
+            Button render = new Button();
+            screen.Controls.Add(render);
+            render.Text = "Render";
+            render.Font = new Font("Arial Black", 15, FontStyle.Regular);
+            render.Size = new Size(480, 120);
+            render.Location = new Point(10, renderY);
+
+            // Refresh Button
+            Button refresh = new Button();
+            screen.Controls.Add(refresh);
+            refresh.Text = "Reset";
+            refresh.Font = Arial;
+            refresh.Size = new Size(230, 60);
+            refresh.Location = new Point(260, renderY - 80);
+
+
+            // Show Center button
+            Button showC = new Button();
+            screen.Controls.Add(showC);
+            showC.Text = "Show Center";
+            showC.Font = Arial;
+            showC.Size = new Size(230, 60);
+            showC.Location = new Point(10, renderY - 80);
+
             // Render view1
             void renderView1(object sender, EventArgs e)
             {
@@ -474,36 +500,6 @@ class SmoothForm : Form
 
                 renderPicture(null, new EventArgs());
             }
-
-
-
-            // Render button
-            int renderY = screenHeight - 150;
-            Button render = new Button();
-            screen.Controls.Add(render);
-            render.Text = "Render";
-            render.Font = new Font("Arial Black", 15, FontStyle.Regular);
-            render.Size = new Size(480, 120);
-            render.Location = new Point(10, renderY);
-
-            // Refresh Button
-            Button refresh = new Button();
-            screen.Controls.Add(refresh);
-            refresh.Text = "Reset";
-            refresh.Font = Arial;
-            refresh.Size = new Size(230, 60);
-            refresh.Location = new Point(260, renderY - 80);
-
-
-            // Show Center button
-            Button showC = new Button();
-            screen.Controls.Add(showC);
-            showC.Text = "Show Center";
-            showC.Font = Arial;
-            showC.Size = new Size(230, 60);
-            showC.Location = new Point(10, renderY - 80);
-
-
 
             // UI Background
             Bitmap background = new Bitmap(screenWidth, screenHeight);
