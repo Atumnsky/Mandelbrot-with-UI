@@ -10,7 +10,7 @@ class SmoothForm : Form
         this.Text = "MandelBrot in C#";
         this.ClientSize = window;
 
-        this.AutoScaleMode = AutoScaleMode.Dpi;
+        //this.AutoScaleMode = AutoScaleMode.Dpi;
 
         DoubleBuffered = true;
     }
@@ -84,7 +84,7 @@ class SmoothForm : Form
             itControl.Location = new Point(buttonX, itY);
             itControl.Size = buttonSize;
             itControl.Value = 100;
-            itControl.Maximum = 5000;
+            itControl.Maximum = 100000;
             itControl.Minimum = 1;
 
 

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot-with-UI\\Mandelbrot Opdracht\\",
+  "WorkspaceRootPath": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\3K Mandelbrot Opdracht\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|c:\\users\\he\\documents\\github\\mandelbrot-with-ui\\mandelbrot opdracht\\mandelbrot opdracht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:mandelbrot opdracht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|c:\\users\\he\\documents\\github\\mandelbrot_opdracht\\3k mandelbrot opdracht\\mandelbrot opdracht 3k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:mandelbrot opdracht 3k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|c:\\users\\he\\documents\\github\\mandelbrot-with-ui\\mandelbrot opdracht\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|c:\\users\\he\\documents\\github\\mandelbrot_opdracht\\3k mandelbrot opdracht\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
@@ -31,23 +31,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mandelbrot Opdracht.cs",
-              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot-with-UI\\Mandelbrot Opdracht\\Mandelbrot Opdracht.cs",
-              "RelativeDocumentMoniker": "Mandelbrot Opdracht.cs",
-              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot-with-UI\\Mandelbrot Opdracht\\Mandelbrot Opdracht.cs",
-              "RelativeToolTip": "Mandelbrot Opdracht.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwB0AAAAjAAAAAAAAAA==",
+              "Title": "Mandelbrot Opdracht 3K.cs",
+              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\3K Mandelbrot Opdracht\\Mandelbrot Opdracht 3K.cs",
+              "RelativeDocumentMoniker": "Mandelbrot Opdracht 3K.cs",
+              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\3K Mandelbrot Opdracht\\Mandelbrot Opdracht 3K.cs",
+              "RelativeToolTip": "Mandelbrot Opdracht 3K.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T22:43:05.496Z",
+              "WhenOpened": "2025-12-04T01:36:22.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot-with-UI\\Mandelbrot Opdracht\\Properties\\Resources.resx",
+              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\3K Mandelbrot Opdracht\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot-with-UI\\Mandelbrot Opdracht\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\3K Mandelbrot Opdracht\\Properties\\Resources.resx",
               "RelativeToolTip": "Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-12-03T22:01:34.519Z"
