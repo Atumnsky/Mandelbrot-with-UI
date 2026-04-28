@@ -47,11 +47,6 @@ C:\Users\He\Desktop\Mandelbrot_Opdracht-main\Mandelbrot_Opdracht-main\Mandelbrot
 C:\Users\He\Desktop\Mandelbrot_Opdracht-main\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.pdb
 C:\Users\He\Desktop\Mandelbrot_Opdracht-main\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.genruntimeconfig.cache
 C:\Users\He\Desktop\Mandelbrot_Opdracht-main\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\ref\Mandelbrot Opdracht.dll
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Opdracht.exe
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Opdracht.deps.json
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Opdracht.runtimeconfig.json
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Opdracht.dll
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Opdracht.pdb
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot_Opdracht.Mandelbrot Opdracht.resources
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot_Opdracht.Properties.Resources.resources
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.csproj.GenerateResource.cache
@@ -60,8 +55,14 @@ C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mande
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.AssemblyInfo.cs
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.csproj.CoreCompileInputs.cache
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.sourcelink.json
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.dll
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\refint\Mandelbrot Opdracht.dll
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.pdb
 C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Opdracht.genruntimeconfig.cache
-C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\ref\Mandelbrot Opdracht.dll
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Explorer.exe
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Explorer.deps.json
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Explorer.runtimeconfig.json
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Explorer.dll
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\bin\Debug\net8.0-windows\Mandelbrot Explorer.pdb
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Explorer.dll
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\refint\Mandelbrot Explorer.dll
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\Mandelbrot Explorer.pdb
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\ref\Mandelbrot Explorer.dll
+C:\Users\He\Documents\GitHub\Mandelbrot_Opdracht\1080P Mandelbrot_Opdracht\Mandelbrot_Opdracht-main\Mandelbrot Opdracht\obj\Debug\net8.0-windows\SmoothForm.resources

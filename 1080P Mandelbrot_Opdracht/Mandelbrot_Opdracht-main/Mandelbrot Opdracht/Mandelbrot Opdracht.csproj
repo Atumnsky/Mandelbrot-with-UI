@@ -7,7 +7,23 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>SmoothForm.Program</StartupObject>
+    <AssemblyName>Mandelbrot Explorer</AssemblyName>
+    <ApplicationIcon>Mandelbrot Explorer.ico</ApplicationIcon>
+    <Authors>Yuepeng He</Authors>
+    <PackageIcon>view2.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Mandelbrot Explorer.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\previews\view2.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

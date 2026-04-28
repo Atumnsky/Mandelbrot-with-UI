@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Mandelbrot Opdracht")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Yuepeng He")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2240e9b2a26f5909026895cbe1dabf5ac04dad0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Mandelbrot Opdracht")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Mandelbrot Opdracht")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2c87746c21a2f55b538aa6f27ff62ef1c71eae6")]
+[assembly: System.Reflection.AssemblyProductAttribute("Mandelbrot Explorer")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Mandelbrot Explorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

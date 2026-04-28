@@ -26,6 +26,11 @@ class SmoothForm : Form //SmoothForm werd gebruikt voor double buffer
             int bitmapWidth = 750;
             int bitmapHeight = 750;
 
+            int test = bitmapWidth;
+            test = 500;
+
+
+
             // Meer moderne UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

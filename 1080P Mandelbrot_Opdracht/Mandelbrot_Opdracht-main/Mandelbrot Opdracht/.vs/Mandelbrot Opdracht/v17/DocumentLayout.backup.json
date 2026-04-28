@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:mandelbrot opdracht 1080p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|c:\\users\\he\\documents\\github\\mandelbrot_opdracht\\1080p mandelbrot_opdracht\\mandelbrot_opdracht-main\\mandelbrot opdracht\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\mandelbrot opdracht 1080p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DECA63B-EE09-4ADC-B388-BC92BE3E8BAF}|Mandelbrot Opdracht.csproj|solutionrelative:mandelbrot opdracht 1080p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,28 +29,32 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Mandelbrot Opdracht 1080P.cs",
               "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Mandelbrot Opdracht 1080P.cs",
               "RelativeDocumentMoniker": "Mandelbrot Opdracht 1080P.cs",
-              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Mandelbrot Opdracht 1080P.cs*",
-              "RelativeToolTip": "Mandelbrot Opdracht 1080P.cs*",
-              "ViewState": "AgIAAJEBAAAAAAAAAAAgwKcBAAAeAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Mandelbrot Opdracht 1080P.cs",
+              "RelativeToolTip": "Mandelbrot Opdracht 1080P.cs",
+              "ViewState": "AgIAAJcCAAAAAAAAAAAAAMMCAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T01:35:30.831Z",
+              "WhenOpened": "2025-12-16T14:53:48.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Properties\\Resources.resx",
-              "RelativeToolTip": "Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-03T22:01:34.519Z"
+              "Title": "Mandelbrot Opdracht 1080P.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Mandelbrot Opdracht 1080P.cs",
+              "RelativeDocumentMoniker": "Mandelbrot Opdracht 1080P.cs",
+              "ToolTip": "C:\\Users\\He\\Documents\\GitHub\\Mandelbrot_Opdracht\\1080P Mandelbrot_Opdracht\\Mandelbrot_Opdracht-main\\Mandelbrot Opdracht\\Mandelbrot Opdracht 1080P.cs [Design]*",
+              "RelativeToolTip": "Mandelbrot Opdracht 1080P.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:55:53.967Z"
             }
           ]
         }
